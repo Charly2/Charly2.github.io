@@ -564,3 +564,67 @@ FOLLOW BUTTON
 ..contacto p{
 
 }
+
+a #arribaId{
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    width: 50px;
+    height: 50px;
+    background: #EA9312;
+    position: fixed;
+    bottom:  1em;
+    right: -10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 1.2s;
+    
+}
+
+.acti{
+    right: 1em !important;
+}
+
+.as{
+    background: red;
+    position: fixed;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+            transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+            transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulses {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+}
+
+.idio a:active,.idio a:hover,.idio a:visited,.idio a:link{
+    outline: none;
+    background: red;
+}

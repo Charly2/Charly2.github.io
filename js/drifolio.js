@@ -76,18 +76,34 @@ $(function () {
                         .removeClass('animated fadeOutUp')
                         .addClass('animated fadeInDown')
                         .fadeIn();
+                        $('#arribaId').css({
+                            'right': '1em'
+                        });
 
                 } else {
                     $('.navbar')
                         .removeClass('animated fadeInDown')
                         .addClass('animated fadeOutUp')
                         .fadeOut();
+                        $('#arribaId').css({
+                            'right': '-10em'
+                        });
                 }
             });
         });
 
     });
 }(jQuery));
+
+$('#arribaId').hover(
+    function () {
+        $(this).addClass('animated pulses')
+    },
+    function () {
+        $(this).removeClass('animated pulses')
+    },
+)
+
 
 
 //========================
